@@ -16,16 +16,12 @@ export default async function Page(){
       articles.map((article,index)=>{
         return (
           <div key={article.id}>
-              <h4 className="capitalize">{article.title}</h4>
+              <a href={`/articles/${article.id}`}><h4 className="capitalize">{article.title}</h4></a>
               <p className="text-xs">{article.body}</p>
           </div>
         )
       })
      }
-
-    
-
-
 
       </div>
     </div>
